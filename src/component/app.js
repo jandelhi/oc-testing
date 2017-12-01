@@ -1,6 +1,7 @@
 import React from 'react'
 import {render} from 'react-dom'
-import Wines from './Wines.js'
+import Wine from './Wine.js'
 
-render(<Wines />, document.getElementById("root-wine"))
+const data = document.__CONTENT__;
+render(<Wine info={data.wines} />, document.getElementById("root-wine"))
 
