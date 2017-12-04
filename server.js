@@ -1,7 +1,9 @@
 import React from 'react';
 import {renderToString} from 'react-dom/server';
 import Wine from './src/component/Wine.js'
-const wineInfo = require('./src/component/WineInformation.json') 
+import { connect } from 'net';
+//const wineInfo = require('./src/component/content/WineInformation.json') 
+const wineInfo = require('./src/component/content/Wines.json') 
 
 export const data = (context, callback) => {
   const { name } = context.params;
@@ -9,7 +11,6 @@ export const data = (context, callback) => {
 
   const content = {};
   content.wines = wineInfo;
-
   const renderedApp = renderToString(<Wine info={wineInfo} />);
 
   callback(null, {

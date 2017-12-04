@@ -1,0 +1,25 @@
+{
+    "wines":   [
+        {
+            "name": "Casillero del Diablo",
+            "color": "Red",
+            "year": "2015",
+            "type": "Cabernet Sauvignon",
+            "country": "Chile"
+        },
+        {
+            "name": "Robert Oatley",
+            "color": "White",
+            "year": "2015",
+            "type": "Chardonnay",
+            "country": "Australia"
+        },
+        {
+            "name": "Résonance",
+            "color": "Red",
+            "year": "2015",
+            "type": "Pinot Noir",
+            "country": "USA"
+        }
+    ]
+}

@@ -2,14 +2,21 @@ import React from "react"
 
 export default class Wine extends React.Component {
     render() {
+        const wines = this.props.info.wines.map((wine) => {
+            return (    <div>
+                <span> Name: {wine.name}</span><br/>
+                <span>Color: {wine.color}</span><br/>
+                <span>Year: {wine.year}</span><br/>
+                <span>Type: {wine.type}</span><br/>
+                <span>Country: {wine.country}</span>
+                <br/>
+                <br/>
+             </div>)
+        });
+
         return(
-            <div>
-               <span> Name: {this.props.info.name}</span><br/>
-               <span>Color: {this.props.info.color}</span><br/>
-               <span>Year: {this.props.info.year}</span><br/>
-               <span>Type: {this.props.info.type}</span><br/>
-               <span>Country: {this.props.info.country}</span>
-            </div>
+            <div>{wines}</div>
         );
     }
 }
+
