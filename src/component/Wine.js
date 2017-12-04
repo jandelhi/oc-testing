@@ -4,13 +4,12 @@ export default class Wine extends React.Component {
     render() {
         return(
             <div>
-                Hello for now! This will be wine info soon.
-                <br/>
-               <span> Name: {this.props.info.name}</span>
+               <span> Name: {this.props.info.name}</span><br/>
+               <span>Color: {this.props.info.color}</span><br/>
+               <span>Year: {this.props.info.year}</span><br/>
+               <span>Type: {this.props.info.type}</span><br/>
+               <span>Country: {this.props.info.country}</span>
             </div>
         );
     }
 }
-
-Wine.propTypes = {
-  };
