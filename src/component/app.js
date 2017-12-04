@@ -3,6 +3,6 @@ import {render} from 'react-dom'
 import Wine from './Wine.js'
 
 const content = document.__DATA__;
-
-render(<Wine info={content.wines} />, document.getElementById("root-wine"))
+const path = document.__PATH__;
+render(<Wine info={content.wines} path={path} />, document.getElementById("root-wine"))
 

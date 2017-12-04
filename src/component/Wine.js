@@ -2,8 +2,11 @@ import React from "react"
 
 export default class Wine extends React.Component {
     render() {
+        const staticPath = this.props.path;
         const wines = this.props.info.wines.map((wine) => {
-            return (    <div>
+            return (    
+            <div key={wine.name}> 
+                <img src = "{wine.image}" />
                 <span> Name: {wine.name}</span><br/>
                 <span>Color: {wine.color}</span><br/>
                 <span>Year: {wine.year}</span><br/>
@@ -15,8 +18,8 @@ export default class Wine extends React.Component {
         });
 
         return(
-            <div>{wines}</div>
+            <div>
+            {wines}</div>
         );
     }
 }
-

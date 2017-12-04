@@ -5,21 +5,24 @@
             "color": "Red",
             "year": "2015",
             "type": "Cabernet Sauvignon",
-            "country": "Chile"
+            "country": "Chile",
+            "image": "http://www.drinksdirect.co.uk/acatalog/casillero-del-diablo-cabernet-sauvignon-concha-y-toro.jpg"
         },
         {
             "name": "Robert Oatley",
             "color": "White",
             "year": "2015",
             "type": "Chardonnay",
-            "country": "Australia"
+            "country": "Australia",
+            "image": "https://smhttp-ssl-54521.nexcesscdn.net/media/catalog/product/cache/1/thumbnail/500x800/9df78eab33525d08d6e5fb8d27136e95/w/i/wine.jpg"
         },
         {
             "name": "Résonance",
             "color": "Red",
             "year": "2015",
             "type": "Pinot Noir",
-            "country": "USA"
+            "country": "USA",
+            "image": "http://www.totalwine.com/media/sys_master/twmmedia/h3e/h5f/9985246232606.png"
         }
     ]
 }
